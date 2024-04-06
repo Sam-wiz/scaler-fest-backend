@@ -19,5 +19,6 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path("/register", EarlyRegister.as_view(), name="registerUserView")
+    path("/register", EarlyRegister.as_view(), name="registerUserView"),
+    path('register/', EarlyRegister.as_view(), name='early_register'),
 ]
